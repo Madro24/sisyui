@@ -1,0 +1,25 @@
+{
+  "name": "sisyui",
+  "description": "Recetario sisy UI",
+  "main": "index.js",
+  "authors": [
+    "Omar Madrid"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "ui",
+    "sisy"
+  ],
+  "homepage": "app/index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass": "^3.3.7"
+  }
+}
