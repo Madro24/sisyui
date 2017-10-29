@@ -1,48 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>Starter Template for Bootstrap</title>
-    <!-- Bootstrap core CSS -->
-    <link href="css/styles.css" rel="stylesheet">
-  </head>
 
-  <body class="testing">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Recetario">
+  <meta name="author" content="Omar Madrid">
+  <title>Starter Template for Bootstrap</title>
+  <!-- Bootstrap core CSS -->
+  <!--build:css css/styles.min.css-->
+  <link href="css/styles.css" rel="stylesheet">
+  <!--endbuild-->
+</head>
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">Project name</a>
+        <a class="navbar-brand" href="#">Project name</a>
+      </div>
+      <div id="navbar" class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <!--/.nav-collapse -->
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <div class="starter-template">
+      <h1>SiSy Recetario</h1>
+      <form>
+        <div class="form-group">
+          <label for="recipe_name">Nombre de receta:</label>
+          <input type="text" class="form-control" id="recipe_name">
         </div>
-        <div id="navbar" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div><!--/.nav-collapse -->
-      </div>
-    </nav>
+        <div class="form-group">
+          <label for="pwd">Password:</label>
+          <input type="password" class="form-control" id="pwd">
+        </div>
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+    </div>
 
-    <div class="container">
+  </div>
+  <!-- /.container -->
+  <!--build:js js/main.min.js -->
+  <script src="../bower_components/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+  <script src="../bower_components/vue/dist/vue.runtime.common.js"></script>
+  <!-- endbuild -->
+</body>
 
-      <div class="starter-template">
-        <h1>SiSy Recetario</h1>
-        <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
-        <h2>Icons</h2>
-        <p><i class="fa fa-rocket"></i></p>
-      </div>
-
-    </div><!-- /.container -->
-  </body>
 </html>
